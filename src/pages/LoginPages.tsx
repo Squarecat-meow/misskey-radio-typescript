@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 
 import LoginButton from "../Components/LoginPages/LoginButton";
 import { useNavigate } from "react-router-dom";
+import LoginWelcome from "../Components/LoginPages/LoginWelcome";
 
 const Gradient = keyframes`
 0% {
@@ -39,12 +40,6 @@ const Background = styled.div`
   animation: ${Gradient} 30s ease infinite;
   z-index: -10;
   position: absolute;
-`;
-
-const Title = styled.h1`
-  font-size: 10vw;
-  color: white;
-  font-weight: 900;
 `;
 
 const Address = styled.input`
@@ -95,7 +90,7 @@ const LoginPages = () => {
   return (
     <div>
       <Wrapper>
-        <Title>환영합니다.</Title>
+        <LoginWelcome />
         <form
           style={{
             display: "flex",
