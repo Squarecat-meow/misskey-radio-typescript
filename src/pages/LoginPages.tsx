@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Background = styled.div`
+export const Background = styled.div`
   width: 100vw;
   height: 100vh;
   left: 0;

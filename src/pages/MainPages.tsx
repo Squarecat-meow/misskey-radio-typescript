@@ -101,10 +101,6 @@ const MainPages = () => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(notes);
-  }, [notes]);
-
   return (
     <div>
       <NoteComponents notes={notes} />
