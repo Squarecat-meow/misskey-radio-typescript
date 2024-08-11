@@ -15,8 +15,8 @@ const LoginButton = () => {
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     @media only screen and (max-width: 600px) {
-      width: 10em;
-      height: 2rem;
+      width: 16em;
+      height: 3em;
       border-radius: 5px;
     }
     &:hover {
@@ -41,7 +41,7 @@ const LoginButton = () => {
     height: 40px;
     margin-left: 20px;
     @media only screen and (max-width: 600px) {
-      margin-left: 10px;
+      margin-left: 15px;
       height: 20px;
     }
   `;
@@ -51,7 +51,7 @@ const LoginButton = () => {
     color: gray;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     @media only screen and (max-width: 600px) {
-      font-size: 10px;
+      font-size: 16px;
     }
   `;
 

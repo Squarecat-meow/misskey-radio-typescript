@@ -43,11 +43,11 @@ const BackOpacity = keyframes`
 
 const Wrapper = styled.div`
   width: 50vw;
-  height: 16vh;
-  margin-bottom: 30px;
+  height: 20vh;
   @media only screen and (max-width: 600px) {
     width: 80vw;
-    height: 5vh;
+    height: 4vh;
+    margin-bottom: 30px;
   }
 `;
 
@@ -55,41 +55,53 @@ const Box = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  align-items: center;
   flex-flow: column;
   transform-style: preserve-3d;
-  align-items: center;
+  justify-content: center;
   animation: ${rotateCube} 12s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite;
 `;
 
 const Title = styled.span`
-  font-size: 5vw;
+  font-size: 120px;
   color: white;
   font-weight: 900;
   position: absolute;
-
   @media only screen and (max-width: 600px) {
-    font-size: 12vw;
+    font-size: 50px;
   }
 
   &:nth-child(1) {
-    transform: translateZ(50px);
+    transform: translateZ(70px);
     animation: ${FrontOpacity} 12s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite;
     opacity: 1;
+    @media only screen and (max-width: 600px) {
+      transform: translateZ(30px);
+    }
   }
   &:nth-child(2) {
-    transform: rotateX(90deg) translateZ(50px);
+    transform: rotateX(90deg) translateZ(70px);
     animation: ${TopOpacity} 12s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite;
     opacity: 0;
+    @media only screen and (max-width: 600px) {
+      transform: rotateX(90deg) translateZ(30px);
+    }
   }
   &:nth-child(3) {
-    transform: rotateX(180deg) translateZ(50px);
+    transform: rotateX(180deg) translateZ(70px);
     animation: ${BottomOpacity} 12s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite;
     opacity: 0;
+    @media only screen and (max-width: 600px) {
+      transform: rotateX(180deg) translateZ(30px);
+    }
   }
   &:nth-child(4) {
-    transform: rotateX(-90deg) translateZ(50px);
+    transform: rotateX(-90deg) translateZ(70px);
     animation: ${BackOpacity} 12s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite;
     opacity: 0;
+    @media only screen and (max-width: 600px) {
+      transform: rotateX(-90deg) translateZ(30px);
+    }
   }
 `;
 
